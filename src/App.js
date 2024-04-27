@@ -2,10 +2,16 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-     <h1 className="text-3xl font-bold underline text-red-200">
-      Hello world!
-    </h1>
+    <div className=''>
+    <div className='bg-red-800 w-[50%] mx-auto '>
+      <ul>
+        <li>Detect Language</li>
+        <li>English</li>
+        <li>French</li>
+        <li>Spanish</li>
+        </ul>
+
+       </div>
     </div>
   );
 }
