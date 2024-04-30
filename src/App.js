@@ -1,6 +1,19 @@
 import './App.css';
-
+import { useEffect, useState } from 'react';
 function App() {
+const [tran,settran] = useState();
+
+useEffect(()=>{
+  fetch('https://api.mymemory.translated.net/get?q=Hello,%20how%20are%20you?!&langpair=en|fr')
+  .then(response => response.json())
+  .then(data => {
+    settran(data)
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
+
   return (
     <div className='flex justify-center'>
     <div className='bg-red-800 w-[40%] mx-auto bg-gradient-to-l from-cyan-500 to-blue-500 rounded-xl'>
