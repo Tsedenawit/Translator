@@ -13,7 +13,11 @@ function App() {
       <form>
         <textarea className='w-[600px] '></textarea>
       </form>
-
+      <div>
+        <button>bl</button>
+        <button>b2</button>
+        <button className=''>Translate</button>
+      </div>
       </div>
       
        <div className='bg-red-800 w-[40%] mx-auto '>
