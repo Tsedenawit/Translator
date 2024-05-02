@@ -4,7 +4,7 @@ function App() {
 const [tran,settran] = useState();
 
 useEffect(()=>{
-  fetch('https://api.mymemory.translated.net/get?q=Hello,%20how%20are%20you?!&langpair=en|fr')
+  fetch('https://github.com/devchallenges-io/web-project-ideas/blob/main/front-end-projects/data/property-listing-data.json')
   .then(response => response.json())
   .then(data => {
     settran(data)
