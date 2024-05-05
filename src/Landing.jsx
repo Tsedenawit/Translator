@@ -24,7 +24,7 @@ useEffect(()=>{
       <button>Spanish</button>
       </div>
       <form>
-        <textarea className='w-[600px] '></textarea>
+        <textarea className='w-[40%] '></textarea>
       </form>
       <div>
         <button>bl</button>
