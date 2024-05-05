@@ -1,8 +1,8 @@
-import landing from './Landing';
+import Landing from './Landing';
 function App(props) {
   return (
     <div>
-      <landing/>
+      <Landing/>
     </div>
  
   )

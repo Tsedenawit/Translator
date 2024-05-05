@@ -1,19 +1,19 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 export default function landing(props) {
-const [tran,settran] = useState();
+// const [tran,settran] = useState();
 
-useEffect(()=>{
-  fetch('https://github.com/devchallenges-io/web-project-ideas/blob/main/front-end-projects/data/property-listing-data.json')
-  .then(response => response.json())
-  .then(data => {
-    settran(data)
-  })
-  .catch(error => {
-    console.log(error)
-  })
-});
-
+// useEffect(()=>{
+//   fetch('https://github.com/devchallenges-io/web-project-ideas/blob/main/front-end-projects/data/property-listing-data.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     settran(data)
+//   })
+//   .catch(error => {
+//     console.log(error)
+//   })
+// });
+// console.log(tran)
   return (
     <div className='flex justify-center'>
     <div className='bg-red-800 w-[40%] mx-auto bg-gradient-to-l from-cyan-500 to-blue-500 rounded-xl'>
@@ -25,7 +25,7 @@ useEffect(()=>{
       </div>
       <hr></hr>
       <form>
-        <textarea className='w-[40%] '></textarea>
+        <textarea className='w-[60%] '></textarea>
       </form>
       <div>
         <button>bl</button>
