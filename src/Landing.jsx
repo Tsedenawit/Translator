@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-function App(props) {
+export default function landing(props) {
 const [tran,settran] = useState();
 
 useEffect(()=>{
@@ -23,6 +23,7 @@ useEffect(()=>{
       <button>French</button>
       <button>Spanish</button>
       </div>
+      <hr></hr>
       <form>
         <textarea className='w-[40%] '></textarea>
       </form>
