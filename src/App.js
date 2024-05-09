@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 function App(props) {
   const [tran,settran] = useState();
+ const [source, setSource]=useState();
+ const [target, setTarget]=useState();
+
  
   useEffect(()=>{
     fetch('https://api.mymemory.translated.net/get?q=Hello,%20how%20are%20you?!&langpair=en|fr')
