@@ -4,6 +4,7 @@ function App(props) {
  const [source, setSource]=useState();
  const [target, setTarget]=useState();
 
+let values = tran.matches[0].target;
  const handleSource = (langValue) => {
   if (langValue === "eng"){
     setSource("en-GB")
@@ -22,10 +23,12 @@ const handleTarget =(Value)=>{
     console.log("french")
   }
 }
-// const translate =()=>{
-// if ({target} === "eng")
-// }
-console.log(tran.matches[0].target)
+const translate =()=>{
+if (target === "fr-FR" && source === "en-GB"){
+  console.log("Eng")
+}else if(target === "en-GB" && source === "fr-FR"){
+  console.log("source is french")
+}
   useEffect(()=>{
     fetch('https://api.mymemory.translated.net/get?q=Hello,%20how%20are%20you?!&langpair=en|fr')
     .then(response => response.json())
