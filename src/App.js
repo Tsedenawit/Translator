@@ -13,15 +13,19 @@ function App(props) {
     console.log("french")
   }
  }
-const handleTarget =(langValue)=>{
-  if (langValue === "eng"){
+const handleTarget =(Value)=>{
+  if (Value === "eng"){
     setTarget("en-GB")
     console.log("english")
-  }else if(langValue === "fre"){
+  }else if(Value === "fre"){
     setTarget("fr-FR")
     console.log("french")
   }
 }
+// const translate =()=>{
+// if ({target} === "eng")
+// }
+console.log(tran.matches[0].target)
   useEffect(()=>{
     fetch('https://api.mymemory.translated.net/get?q=Hello,%20how%20are%20you?!&langpair=en|fr')
     .then(response => response.json())
@@ -56,8 +60,8 @@ const handleTarget =(langValue)=>{
         <div className='bg-red-800 w-[40%] mx-auto bg-gradient-to-l from-cyan-500 to-blue-500 rounded-xl'>
         <div className='flex text-white justify-between'>
         <button>Detect lang</button>
-        <button value="eng" onClick={() => handleSource("eng")}>English</button>
-        <button value="fre"onClick={() => handleSource("fre")}>French</button>
+        <button value="eng" onClick={() => handleTarget("eng")}>English</button>
+        <button value="fre"onClick={() => handleTarget("fre")}>French</button>
         <button value="spa">Spanish</button>
         </div>
         <hr></hr>
