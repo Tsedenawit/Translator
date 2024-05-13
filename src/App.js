@@ -4,7 +4,7 @@ function App(props) {
  const [source, setSource]=useState();
  const [target, setTarget]=useState();
 
-let values = tran.matches[0].target;
+// let values = tran.matches[0].target;
  const handleSource = (langValue) => {
   if (langValue === "eng"){
     setSource("en-GB")
@@ -25,10 +25,10 @@ const handleTarget =(Value)=>{
 }
 const translate =()=>{
 if (target === "fr-FR" && source === "en-GB"){
-  console.log("Eng")
+  console.log("source is english")
 }else if(target === "en-GB" && source === "fr-FR"){
   console.log("source is french")
-}
+}}
   useEffect(()=>{
     fetch('https://api.mymemory.translated.net/get?q=Hello,%20how%20are%20you?!&langpair=en|fr')
     .then(response => response.json())
@@ -57,7 +57,7 @@ if (target === "fr-FR" && source === "en-GB"){
         <div>
           <button>bl</button>
           <button>b2</button>
-          <button className=''>Translate</button>
+          <button className='' onClick={translate}>Translate</button>
         </div>
         </div>  
         <div className='bg-red-800 w-[40%] mx-auto bg-gradient-to-l from-cyan-500 to-blue-500 rounded-xl'>
@@ -74,7 +74,6 @@ if (target === "fr-FR" && source === "en-GB"){
         <div>
           <button>bl</button>
           <button>b2</button>
-          <button className=''>Translate</button>
         </div>
         </div>
       </div>
