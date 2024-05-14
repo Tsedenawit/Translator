@@ -58,7 +58,7 @@ if (target === "fr-FR" && source === "en-GB"){
         </form>
         <div>
           <button>bl</button>
-          <i class="bi bi-copy"></i>
+          
           <button className='' onClick={translate}>Translate</button>
         </div>
         </div>  
@@ -74,8 +74,9 @@ if (target === "fr-FR" && source === "en-GB"){
           <textarea className='w-[60%] '></textarea>
         </form>
         <div>
-          <button>bl</button>
-          <button>b2</button>
+          <button type="button" className="bg-grey-200 hover:bg-violet-600">
+          <i class="bi bi-copy"></i> Copy
+          </button>
         </div>
         </div>
       </div>
