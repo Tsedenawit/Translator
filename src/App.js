@@ -3,6 +3,7 @@ function App(props) {
   const [tran,settran] = useState();
  const [source, setSource]=useState();
  const [target, setTarget]=useState();
+ const [translation,setTranslation]= useState();
 
 // let values = tran.matches[0].target;
  const handleSource = (langValue) => {
@@ -25,6 +26,7 @@ const handleTarget =(Value)=>{
 }
 const translate =()=>{
 if (target === "fr-FR" && source === "en-GB"){
+  setTranslation();
   console.log("source is english")
 }else if(target === "en-GB" && source === "fr-FR"){
   console.log("source is french")
@@ -56,7 +58,7 @@ if (target === "fr-FR" && source === "en-GB"){
         </form>
         <div>
           <button>bl</button>
-          <button>b2</button>
+          <i class="bi bi-copy"></i>
           <button className='' onClick={translate}>Translate</button>
         </div>
         </div>  
