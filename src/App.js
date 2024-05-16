@@ -82,7 +82,7 @@ function App(props) {
         </form>
         <div className="absolute bottom-4 flex">
         <div> <button>bl</button></div> 
-        <div className="rounded w-[180px] h-[60px] text-center text-2xl " id="Butt">
+        <div className="rounded w-[150px] h-[50px] text-center float-right text-2xl text-white ml-[290%]" id="Butt">
           <button className="" onClick={translate}>
             Translate
           </button></div>
