@@ -60,8 +60,8 @@ function App(props) {
 
   console.log(theme);
   return (
-    <div className="flex justify-center">
-      <div className="bg-red-800 w-[40%] mx-auto rounded-xl">
+    <div className="flex justify-center relative">
+      <div className="bg-red-800 w-[40%] mx-auto rounded-xl text-grey-100 h-[300px]">
         <div className="flex text-white justify-between ">
           <button>Detect lang</button>
           <div id="eng" className="bg-blue-400 rounded w-[60px] text-center">
@@ -80,12 +80,12 @@ function App(props) {
         <form>
           <textarea className="w-[60%] "></textarea>
         </form>
-        <div>
-          <button>bl</button>
-
+        <div className="absolute bottom-4 flex">
+        <div> <button>bl</button></div> 
+        <div className="rounded w-[180px] h-[60px] text-center text-2xl " id="Butt">
           <button className="" onClick={translate}>
             Translate
-          </button>
+          </button></div>
         </div>
       </div>
       <div className="bg-red-800 w-[40%] mx-auto bg-gradient-to-l from-cyan-500 to-blue-500 rounded-xl">
